@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspecIAlizate — Ministerio de Educación GCBA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+
+<body>
+    <header>
+    <nav class="navbar" aria-label="Navegación principal">
+        <div class="navbar-brand">
+            <img src="./img/Logo_Ministerio+BA_blanco.png" width="300px" alt="Ministerio de Educación Buenos Aires Ciudad">
+        </div>
+        
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <i class="ti ti-menu-2" aria-hidden="true"></i>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#inicio">Inicio</a>
+            <a href="#publico">Público</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#sectores">Sectores productivos</a>
+            <a href="#requisitos">Requisitos</a>
+            <a href="#inscripcion" class="btn-nav-azul">Inscribite</a>
+        </div>
+    </nav>
+</header>
+    <!-- <header>
+        <nav class="navbar" aria-label="Navegación principal">
+            <div class="navbar-brand">
+                <img src="./img/Logo_Ministerio+BA_blanco.png" width="300px" alt="">
+                <div class="brand-divider"></div>
+
+            </div>
+            <div class="nav-links">
+                <a onclick="sendPrompt('Quiero ver los cursos de EspecIAlizate')" role="button" tabindex="0">Cursos</a>
+                <a onclick="sendPrompt('Cómo inscribirse a EspecIAlizate')" role="button" tabindex="0">Inscripción</a>
+                <a onclick="sendPrompt('Información sobre Talento Tech')" role="button" tabindex="0">Talento Tech</a>
+            </div>
+        </nav>
+    </header> -->
+
+    <main>
+
+        <section class="hero" aria-label="Introducción">
+            <div class="hero-inner">
+                <img src="./img/LOGO_AGENCIA-lineal blanco.png" width="300px">
+                <img src="./img/especIAlizate_logo-blanco.png" alt="Logo EspecIAlizate" class="hero-logo-img" width="">
+
+                <p class="hero-sub">Formación integral en Inteligencia Artificial aplicada al trabajo. Aprendé a usar IA
+                    para resolver desafíos laborales, a tu ritmo y de forma gratuita</p>
+                <div class="hero-row">
+                    <button class="btn-primary"
+                        onclick="sendPrompt('Quiero inscribirme a EspecIAlizate')">Inscribite</button>
+                    <button class="btn-secondary" onclick="sendPrompt('Quiero conocer más sobre EspecIAlizate')">Conocé
+                        el programa</button>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <div class="stat-num">5</div>
+                        <div class="stat-label">Cursos</div>
+                    </div>
+                    <div>
+                        <div class="stat-num">100%</div>
+                        <div class="stat-label">Gratuito</div>
+                    </div>
+                    <div>
+                        <div class="stat-num">Online</div>
+                        <div class="stat-label">Autoasistido</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fundamentacion-layout" aria-labelledby="fundamentacion-title">
+
+            <div class="fund-text-col">
+                <p class="sec-label">Fundamentación</p>
+                <h2 id="fundamentacion-title" class="sec-title">IA para tu desarrollo profesional</h2>
+                <p class="sec-body">EspecIAlizate es una propuesta integral diseñada para desarrollar las competencias
+                    transversales que el mercado actual exige, combinando saberes tecnológicos, analíticos y
+                    organizacionales.</p>
+            </div>
+
+            <div class="fund-cards-col">
+                <article class="fund-card-horizontal">
+                    <div class="fund-icon-wrap">
+                        <i class="ti ti-settings fund-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="fund-card-content">
+                        <h3 class="fund-card-title">Aplicación Práctica</h3>
+                        <p class="fund-card-body">Integrá herramientas de IA en contextos reales de uso desde el primer
+                            día, sin necesidad de saber programar.</p>
+                    </div>
+                </article>
+
+                <article class="fund-card-horizontal">
+                    <div class="fund-icon-wrap">
+                        <i class="ti ti-chart-bar fund-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="fund-card-content">
+                        <h3 class="fund-card-title">Optimización de Procesos</h3>
+                        <p class="fund-card-body">Aprendé a automatizar tareas, organizar tu tiempo y mejorar tu
+                            productividad individual y colectiva.</p>
+                    </div>
+                </article>
+
+                <article class="fund-card-horizontal">
+                    <div class="fund-icon-wrap">
+                        <i class="ti ti-bulb fund-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="fund-card-content">
+                        <h3 class="fund-card-title">Uso Crítico y Responsable</h3>
+                        <p class="fund-card-body">Desarrollá un pensamiento analítico para implementar soluciones
+                            innovadoras y éticamente responsables.</p>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <section class="publico-wrap" aria-labelledby="publico-title">
+            <div class="publico-inner">
+                <p class="sec-label label-dark">¿A quién va dirigido?</p>
+                <h2 id="publico-title" class="sec-title">Diseñado para vos</h2>
+
+                <div class="publico-grid-alt">
+                    <article class="pub-card-alt">
+                        <div class="pub-num-alt" aria-hidden="true">01</div>
+                        <h3 class="pub-title-alt">Trabajadores</h3>
+                        <p class="pub-body-alt">Que buscan actualizar sus competencias digitales sin necesitar
+                            conocimientos previos de programación.</p>
+                    </article>
+
+                    <article class="pub-card-alt">
+                        <div class="pub-num-alt" aria-hidden="true">02</div>
+                        <h3 class="pub-title-alt">Estudiantes avanzados</h3>
+                        <p class="pub-body-alt">Interesados en especializarse en el uso práctico de herramientas de IA
+                            en su campo profesional.</p>
+                    </article>
+
+                    <article class="pub-card-alt">
+                        <div class="pub-num-alt" aria-hidden="true">03</div>
+                        <h3 class="pub-title-alt">Profesionales de distintas áreas</h3>
+                        <p class="pub-body-alt">Con experiencia en su campo de trabajo y que buscan incorporar IA a sus
+                            tareas diarias.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!----------
+        EL PROGRAMA--------->
+        <section class="cursos-wrap" aria-labelledby="programa-title">
+            <div class="cursos-inner">
+                <p class="sec-label">El programa</p>
+                <h2 id="programa-title" class="sec-title">Cinco cursos, un trayecto completo</h2>
+                <div class="cursos-grid">
+
+                    <article class="curso-card">
+                        <p class="curso-tag">Curso 01</p>
+                        <h3 class="curso-title">Introducción a la Inteligencia Artificial</h3>
+                        <p class="curso-desc">Entendé qué es la IA, cómo funciona y sus aplicaciones reales en el
+                            trabajo y la vida cotidiana.</p>
+                        <div class="curso-bottom">
+                            <div>
+                                <a href="#" class="btn-download"><i class="ti ti-download" aria-hidden="true"></i>
+                                    Descargar programa</a>
+                            </div>
+                            <div class="curso-producto">Mapa conceptual de usos y límites</div>
+                        </div>
+                    </article>
+
+                    <article class="curso-card">
+                        <p class="curso-tag">Curso 02</p>
+                        <h3 class="curso-title">Planillas Inteligentes con IA</h3>
+                        <p class="curso-desc">Gestioná y analizá datos, automatizá tareas y construí dashboards de
+                            control asistidos por IA.</p>
+                        <div class="curso-bottom">
+                            <div>
+                                <a href="#" class="btn-download"><i class="ti ti-download" aria-hidden="true"></i>
+                                    Descargar programa</a>
+                            </div>
+                            <div class="curso-producto">Dashboard financiero automatizado</div>
+                        </div>
+                    </article>
+
+                    <article class="curso-card">
+                        <p class="curso-tag">Curso 03</p>
+                        <h3 class="curso-title">Multimedia con IA</h3>
+                        <p class="curso-desc">Producí contenidos audiovisuales con prompting creativo, generación de
+                            imágenes y video generativo.</p>
+                        <div class="curso-bottom">
+                            <div>
+                                <a href="#" class="btn-download"><i class="ti ti-download" aria-hidden="true"></i>
+                                    Descargar programa</a>
+                            </div>
+                            <div class="curso-producto">Portfolio audiovisual asistido por IA</div>
+                        </div>
+                    </article>
+
+                    <article class="curso-card">
+                        <p class="curso-tag">Curso 04</p>
+                        <h3 class="curso-title">Automatización de Procesos y Productividad</h3>
+                        <p class="curso-desc">Creá flujos de trabajo inteligentes que integren IA en tu organización
+                            personal y profesional.</p>
+                        <div class="curso-bottom">
+                            <div>
+                                <a href="#" class="btn-download"><i class="ti ti-download" aria-hidden="true"></i>
+                                    Descargar programa</a>
+                            </div>
+                            <div class="curso-producto">Ecosistema de trabajo con alertas</div>
+                        </div>
+                    </article>
+
+                    <article class="curso-card">
+                        <p class="curso-tag">Curso 05</p>
+                        <h3 class="curso-title">Casos Prácticos por Área Profesional</h3>
+                        <p class="curso-desc">Transferí lo aprendido a tu sector: educación, finanzas, marketing, salud
+                            o gestión.</p>
+                        <div class="curso-bottom">
+                            <div>
+                                <a href="#" class="btn-download"><i class="ti ti-download" aria-hidden="true"></i>
+                                    Descargar programa</a>
+                            </div>
+                            <div class="curso-producto">Proyecto aplicado a tu área</div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!-- <section class="cursos-wrap" aria-labelledby="programa-title">
+            <div class="cursos-inner">
+                <p class="sec-label">El programa</p>
+                <h2 id="programa-title" class="sec-title">Cinco cursos, un trayecto completo</h2>
+                <div class="cursos-grid">
+                    <article class="curso-card">
+                        <p class="curso-tag">Curso 01</p>
+                        <h3 class="curso-title">Introducción a la Inteligencia Artificial</h3>
+                        <p class="curso-desc">Entendé qué es la IA, cómo funciona y sus aplicaciones reales en el
+                            trabajo y la vida cotidiana.</p>
+                        <div class="curso-bottom">
+                            <div>
+
+                            </div>
+                            <div class="curso-producto">Mapa conceptual de usos y límites</div>
+                        </div>
+                    </article>
+                    <article class="curso-card">
+                        <p class="curso-tag">Curso 02</p>
+                        <h3 class="curso-title">Planillas Inteligentes con IA</h3>
+                        <p class="curso-desc">Gestioná y analizá datos, automatizá tareas y construí dashboards de
+                            control asistidos por IA.</p>
+                        <div class="curso-bottom">
+                            <div>
+
+                            </div>
+                            <div class="curso-producto">Dashboard financiero automatizado</div>
+                        </div>
+                    </article>
+                    <article class="curso-card">
+                        <p class="curso-tag">Curso 03</p>
+                        <h3 class="curso-title">Multimedia con IA</h3>
+                        <p class="curso-desc">Producí contenidos audiovisuales con prompting creativo, generación de
+                            imágenes y video generativo.</p>
+                        <div class="curso-bottom">
+                            <div>
+
+                            </div>
+                            <div class="curso-producto">Portfolio audiovisual asistido por IA</div>
+                        </div>
+                    </article>
+                    <article class="curso-card">
+                        <p class="curso-tag">Curso 04</p>
+                        <h3 class="curso-title">Automatización de Procesos y Productividad</h3>
+                        <p class="curso-desc">Creá flujos de trabajo inteligentes que integren IA en tu organización
+                            personal y profesional.</p>
+                        <div class="curso-bottom">
+                            <div>
+
+                            </div>
+                            <div class="curso-producto">Ecosistema de trabajo con alertas</div>
+                        </div>
+                    </article>
+                    <article class="curso-card">
+                        <p class="curso-tag">Curso 05</p>
+                        <h3 class="curso-title">Casos Prácticos por Área Profesional</h3>
+                        <p class="curso-desc">Transferí lo aprendido a tu sector: educación, finanzas, marketing, salud
+                            o gestión.</p>
+                        <div class="curso-bottom">
+                            <div>
+
+                            </div>
+                            <div class="curso-producto">Proyecto aplicado a tu área</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section> -->
+        <!-- APLICACIÓN POR SECTORES -->
+        <section class="trayecto-wrap" aria-labelledby="sectores-title">
+            <div class="trayecto-inner">
+                <p class="sec-label label-cian">Aplicación por sectores</p>
+                <h2 id="sectores-title" class="sec-title" style="color:#fff; margin-bottom: 1rem;">Un mismo aprendizaje,
+                    múltiples industrias</h2>
+                <p class="sec-body" style="color: rgba(255,255,255,0.7); margin-bottom: 2.5rem; max-width: 700px;">
+                    Los conocimientos desarrollados durante el programa se aplican a través de casos y actividades
+                    inspirados en distintos sectores productivos, facilitando la transferencia de lo aprendido a tu
+                    propio ámbito de trabajo.
+                </p>
+
+                <div class="trayecto-steps">
+                    <article class="step">
+                        <div class="step-bar"></div>
+                        <h3 class="step-verb">SERVICIOS EMPRESARIALES</h3>
+                        <p class="step-curso" style="margin-top: 0.5rem; font-size: 12.5px;">Optimización de procesos,
+                            productividad y toma de decisiones.</p>
+                    </article>
+
+                    <article class="step">
+                        <div class="step-bar"></div>
+                        <h3 class="step-verb">GASTRONOMÍA</h3>
+                        <p class="step-curso" style="margin-top: 0.5rem; font-size: 12.5px;">Gestión del negocio,
+                            atención al cliente y comunicación.</p>
+                    </article>
+
+                    <article class="step">
+                        <div class="step-bar"></div>
+                        <h3 class="step-verb">INDUSTRIAS CREATIVAS</h3>
+                        <p class="step-curso" style="margin-top: 0.5rem; font-size: 12.5px;">Creación de contenido y
+                            producción multimedia asistida por IA.</p>
+                    </article>
+
+                    <article class="step">
+                        <div class="step-bar"></div>
+                        <h3 class="step-verb">CONSTRUCCIÓN</h3>
+                        <p class="step-curso" style="margin-top: 0.5rem; font-size: 12.5px;">Planificación, organización
+                            y gestión inteligente de proyectos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" aria-labelledby="metodologia-title">
+            <p class="sec-label">Metodología</p>
+            <h2 id="metodologia-title" class="sec-title">Aprendés haciendo, a tu propio ritmo</h2>
+            <p class="sec-body" style="margin-bottom:0">Modalidad autoasistida: avanzás cuando querés, con materiales
+                organizados por módulos y evaluación basada en proyectos reales.</p>
+            <div class="metodo-grid">
+                <article class="met-card">
+                    <i class="ti ti-player-play met-icon" aria-hidden="true"></i>
+                    <h3 class="met-title">Videos y lecturas breves</h3>
+                    <p class="met-body">Contenidos pensados para personas que trabajan y tienen poco tiempo disponible.
+                    </p>
+                </article>
+                <article class="met-card">
+                    <i class="ti ti-terminal met-icon" aria-hidden="true"></i>
+                    <h3 class="met-title">Prompts guiados con IA</h3>
+                    <p class="met-body">Guías paso a paso para practicar con ChatGPT, Gemini, Canva, Make y otras
+                        herramientas reales.</p>
+                </article>
+                <article class="met-card">
+                    <i class="ti ti-file-download met-icon" aria-hidden="true"></i>
+                    <h3 class="met-title">Plantillas y recursos</h3>
+                    <p class="met-body">Materiales editables y descargables que podés adaptar a tu contexto laboral
+                        inmediatamente.</p>
+                </article>
+                <article class="met-card">
+                    <i class="ti ti-award met-icon" aria-hidden="true"></i>
+                    <h3 class="met-title">Proyecto integrador</h3>
+                    <p class="met-body">Cada curso cierra con un entregable concreto que demuestra lo aprendido en
+                        situaciones reales.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="section" aria-labelledby="requisitos-title">
+            <p class="sec-label">Antes de empezar</p>
+            <h2 id="requisitos-title" class="sec-title">Lo que necesitás</h2>
+            <div class="req-grid">
+                <article class="req-block">
+                    <h3>Requerimientos técnicos</h3>
+                    <ul class="req-list">
+                        <li><span class="req-dot" aria-hidden="true"></span>Conexión a internet estable</li>
+                        <li><span class="req-dot" aria-hidden="true"></span>Computadora con Chrome, Edge o Firefox
+                            actualizado</li>
+                        <li><span class="req-dot" aria-hidden="true"></span>Cuenta de Google activa (Docs, Sheets,
+                            Looker Studio)</li>
+                        <li><span class="req-dot" aria-hidden="true"></span>Acceso a herramientas gratuitas: ChatGPT,
+                            Gemini, Notion, Canva, Make</li>
+                        <li><span class="req-dot" aria-hidden="true"></span>Capacidad para gestionar archivos PDF, DOCX,
+                            XLSX y multimedia</li>
+                    </ul>
+                </article>
+                <article class="req-block">
+                    <h3>Competencias recomendadas</h3>
+                    <ul class="req-list">
+                        <li><span class="req-dot" aria-hidden="true"></span>Conocimientos básicos en tu propia área
+                            profesional (gestión, comunicación, análisis de datos, diseño, etc.)</li>
+                        <li><span class="req-dot" aria-hidden="true"></span>Navegación web y gestión de documentos en la
+                            nube</li>
+                        <li><span class="req-dot" aria-hidden="true"></span>Manejo de correo electrónico</li>
+                        <li><span class="req-dot" aria-hidden="true"></span>Interés por la innovación y la tecnología
+                            aplicada</li>
+                        <li><span class="req-dot" aria-hidden="true"></span>Capacidad de aprendizaje autónomo y
+                            exploratorio</li>
+                        <li><span class="req-dot" aria-hidden="true"></span>No se requieren conocimientos de
+                            programación</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <img src="./img/especIAlizate_logo-blanco.png" alt="Logo EspecIAlizate" class="footer-logo-img">
+                <img src="./img/LOGO_AGENCIA-lineal blanco.png" width="200px">
+            </div>
+            <div class="footer-right">
+                Ministerio de Educación<br>
+                Gobierno de la Ciudad de Buenos Aires<br>
+                <span style="color:rgba(255,255,255,0.25)">Buenos Aires Ciudad · 2026</span>
+            </div>
+        </div>
+
+        <div class="footer-bar">
+            <span>Ministerio de Educación</span>
+            <span class="footer-bar-sep" aria-hidden="true">|</span>
+            <span>Buenos Aires Ciudad</span>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
